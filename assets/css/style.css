@@ -1,0 +1,134 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    scroll-padding-top: 100px;
+    background: #fffaf5;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000958;
+    --primary-color-btn: #ff5b2e;
+}
+
+input,
+textarea,
+button,
+select {
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    -webkit-top-highlight-color: transparent;
+}
+
+/* Common */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "sora", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    --height: 56px;
+    min-width: 214px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    padding: 0 10px;
+
+    border-radius: 99px;
+    border: 1px solid currentColor;
+
+    /* font text */
+    color: var(--primary-color-btn);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__item {
+    padding: 18px;
+}
+
+.navbar-item__link,
+.header-aciton__link {
+    display: block;
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.navbar__item:hover .navbar-item__link,
+.header-aciton__link:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.navbar-item__link::before {
+    content: attr(data);
+    height: 0;
+    display: block;
+    font-weight: 600;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.header__action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__btn {
+    --height: 50px;
+    min-width: 117px;
+    color: #000958;
+    border-color: rgba(0, 9, 88, 0.7);
+    margin-left: 36px;
+}
