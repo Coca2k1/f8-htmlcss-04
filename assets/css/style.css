@@ -90,7 +90,7 @@ button {
     color: var(--primary-color-btn);
     background: none;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
-    border: 1px solid rgba(255, 91, 46, 0.7);
+    border: 1px solid rgba(255, 91, 46, 0.6);
 }
 
 .btn-hover:hover {
@@ -1004,4 +1004,175 @@ button {
     min-width: 193px;
     display: block;
     margin: 0 auto;
+}
+
+/* Pricing */
+
+.pricing {
+    background: #fff6ed;
+    padding: 86px 0;
+}
+
+.pricing__heading,
+.pricing__desc {
+    text-align: center;
+}
+
+.pricing__desc {
+    margin: 24px auto 0;
+    max-width: 709px;
+}
+
+.pricing__switch-inner {
+    position: relative;
+}
+
+.pricing__switch-wrap {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__switch-label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 276px;
+    height: 56px;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    user-select: none;
+    cursor: pointer;
+}
+
+.pricing__switch-value {
+    position: relative;
+    padding: 0 40px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.25s ease;
+}
+
+.pricing__switch-label::before {
+    position: absolute;
+    left: -2px;
+    bottom: -0.5px;
+    content: "";
+    width: 145px;
+    height: 100%;
+    border-radius: 99px;
+    background: var(--primary-color-btn);
+    border: 1px solid var(--primary-color-btn);
+    transition: transform 0.25s ease;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+    width: 131px;
+    left: auto;
+    transform: translateX(108%);
+}
+
+.pricing__switch-input:not(:checked)
+    + .pricing__switch-label
+    .pricing__switch-value:last-child {
+    color: var(--primary-color-btn);
+}
+
+.pricing__switch-input:checked
+    + .pricing__switch-label
+    .pricing__switch-value:first-child {
+    color: var(--primary-color-btn);
+}
+
+.pricing-discount__decor {
+    position: absolute;
+    right: -112px;
+    top: -10px;
+}
+
+/* pricing list  */
+
+.pricing__list {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    column-gap: 44px;
+}
+
+.pricing-item {
+    border-radius: 20px;
+    background: #fff;
+    padding: 30px 28px;
+}
+
+.pricing-item:hover {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
+.pricing-item__type {
+    color: var(--primary-color-btn);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    color: #3f4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.pricing-item__price {
+    display: block;
+    margin-top: 24px;
+    color: var(--primary-color);
+    font-family: Sora, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03;
+}
+
+.pricing-item__btn {
+    margin-top: 22px;
+    min-width: 246px;
+    --height: 44px;
+    box-shadow: none;
+}
+
+.pricing-item__btn:hover {
+    filter: none;
+    -webkit-box-reflect: unset;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item__item {
+    position: relative;
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-item__item::before {
+    content: url(../image/check-bold.svg);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.pricing-item__item--light::before {
+    content: url(../image/check-light.svg);
 }
