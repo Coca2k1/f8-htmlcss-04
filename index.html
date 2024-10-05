@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lucy</title>
 
+        <!-- Aos animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Favicon -->
         <link
             rel="apple-touch-icon"
@@ -236,7 +242,7 @@
                         </div>
 
                         <!-- Hero content -->
-                        <section class="hero__content">
+                        <section class="hero__content" data-aos="fade-left">
                             <h1 class="font-heading hero__title">
                                 Established & Trusted Pet Care about
                             </h1>
@@ -271,7 +277,7 @@
             <section class="about" id="about">
                 <div class="container about__inner">
                     <!-- about content -->
-                    <section class="about__content">
+                    <section class="about__content" data-aos="fade-down-right">
                         <h4 class="about-content__start">// About //</h4>
                         <h1 class="about__title font-heading">
                             Best Agency For Your Pet.
@@ -281,7 +287,7 @@
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua.
                         </p>
-                        <div class="about__list">
+                        <div class="about__list" data-aos="fade-down-right">
                             <!-- list about 1 -->
                             <div class="about__item">
                                 <div class="about__tick-box">
@@ -341,7 +347,7 @@
                     </section>
 
                     <!-- about media -->
-                    <div class="about__media">
+                    <div class="about__media" data-aos="fade-down-left">
                         <div class="about__media-wrap">
                             <img
                                 src="./assets/image/about_img/hero-img.png"
@@ -373,7 +379,7 @@
                 <div class="container">
                     <div class="adv__inner">
                         <!-- service media -->
-                        <div class="adv__media">
+                        <div class="adv__media" data-aos="zoom-in">
                             <img
                                 src="./assets/image/about_img/about-02.png"
                                 alt="Taking A Vacation?
@@ -425,15 +431,21 @@
 
                         <!-- service content -->
                         <section class="adv__content">
-                            <h2 class="font-heading adv__title">
+                            <h2
+                                class="font-heading adv__title"
+                                data-aos="fade-up-left"
+                            >
                                 Taking A Vacation? So Is Your Pet.
                             </h2>
-                            <p class="font-desc adv__desc">
+                            <p
+                                class="font-desc adv__desc"
+                                data-aos="fade-up-left"
+                            >
                                 We offer long-term and short-term boarding.
                                 Every dog has its own private, spacious room and
                                 daily individual time in our large play yard.
                             </p>
-                            <div class="adv__services">
+                            <div class="adv__services" data-aos="fade-down">
                                 <!-- adv service 1 -->
                                 <a href="#!">
                                     <div
@@ -491,7 +503,7 @@
             <!-- Service -->
             <section class="service" id="service-and-rates">
                 <div class="container">
-                    <section class="service__top">
+                    <section class="service__top" data-aos="flip-up">
                         <h4 class="service__desc">What we do for you?</h4>
                         <h2 class="font-heading service__title">
                             Our Services
@@ -501,7 +513,7 @@
                     <!-- service content -->
                     <div class="service__body">
                         <!-- Column 1 -->
-                        <div class="service__column">
+                        <div class="service__column" data-aos="fade-right">
                             <!-- Card 1 -->
                             <article class="service-card">
                                 <a href="#!">
@@ -584,7 +596,7 @@
                         </div>
 
                         <!-- Column 3 -->
-                        <div class="service__column">
+                        <div class="service__column" data-aos="fade-left">
                             <!-- Card 4 -->
                             <article class="service-card">
                                 <a href="#!">
@@ -658,7 +670,11 @@
             <!-- Staff -->
             <section class="staff">
                 <div class="container">
-                    <div class="staff__top">
+                    <div
+                        class="staff__top"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-center"
+                    >
                         <h3 class="staff__title">Pet Care Staff</h3>
                         <h2 class="font-heading staff__heading">
                             Meet Our Groomers
@@ -666,7 +682,7 @@
                     </div>
                     <div class="staff__list">
                         <!-- Staff 1 -->
-                        <article class="staff-item">
+                        <article class="staff-item" data-aos="flip-left">
                             <div class="staff-item__img-wrap">
                                 <img
                                     src="./assets/image/staff-01.png"
@@ -683,7 +699,7 @@
                         </article>
 
                         <!-- Staff 2 -->
-                        <article class="staff-item">
+                        <article class="staff-item" data-aos="flip-left">
                             <div class="staff-item__img-wrap">
                                 <img
                                     src="./assets/image/staff-02.png"
@@ -700,7 +716,7 @@
                         </article>
 
                         <!-- Staff 3 -->
-                        <article class="staff-item">
+                        <article class="staff-item" data-aos="flip-right">
                             <div class="staff-item__img-wrap">
                                 <img
                                     src="./assets/image/staff-03.png"
@@ -717,7 +733,7 @@
                         </article>
 
                         <!-- Staff 4 -->
-                        <article class="staff-item">
+                        <article class="staff-item" data-aos="flip-right">
                             <div class="staff-item__img-wrap">
                                 <img
                                     src="./assets/image/staff-04.png"
@@ -742,15 +758,18 @@
             <!-- Pricing -->
             <section class="pricing">
                 <div class="container">
-                    <h2 class="font-heading pricing__heading">
+                    <h2
+                        class="font-heading pricing__heading"
+                        data-aos="fade-down"
+                    >
                         The Best Choice
                     </h2>
-                    <p class="font-desc pricing__desc">
+                    <p class="font-desc pricing__desc" data-aos="fade-down">
                         We offer long-term and short-term boarding. Every dog
                         has its own private, spacious room and daily individual
                         time in our large play yard.
                     </p>
-                    <div class="pricing__switch-wrap">
+                    <div class="pricing__switch-wrap" data-aos="fade-down">
                         <div class="pricing__switch-inner">
                             <input
                                 type="checkbox"
@@ -781,7 +800,7 @@
                     <!-- Pricing list -->
                     <div class="pricing__list">
                         <!-- pricing item 1 -->
-                        <article class="pricing-item">
+                        <article class="pricing-item" data-aos="zoom-in-right">
                             <p class="pricing-item__type">Basic</p>
                             <h4 class="pricing-item__heading">Day care</h4>
                             <strong class="pricing-item__price">$150</strong>
@@ -816,7 +835,7 @@
                         </article>
 
                         <!-- pricing item 2 -->
-                        <article class="pricing-item">
+                        <article class="pricing-item" data-aos="zoom-out">
                             <p class="pricing-item__type">Exclusive</p>
                             <h4 class="pricing-item__heading">2X Care</h4>
                             <b class="pricing-item__price">$199</b>
@@ -851,7 +870,7 @@
                         </article>
 
                         <!-- pricing item 3 -->
-                        <article class="pricing-item">
+                        <article class="pricing-item" data-aos="zoom-in-left">
                             <p class="pricing-item__type">Platinum</p>
                             <h4 class="pricing-item__heading">4X Care</h4>
                             <b class="pricing-item__price">$299</b>
@@ -916,7 +935,7 @@
                                 />
                             </svg>
                         </button>
-                        <div class="review__content">
+                        <div class="review__content" data-aos="fade-down">
                             <div class="review__list">
                                 <!-- Review item 1 -->
                                 <div class="review-item">
@@ -1083,8 +1102,10 @@
             <section class="blog">
                 <div class="container">
                     <div class="blog__top">
-                        <h2 class="font-heading">Our Blog</h2>
-                        <div class="blog__cta">
+                        <h2 class="font-heading" data-aos="fade-right">
+                            Our Blog
+                        </h2>
+                        <div class="blog__cta" data-aos="fade-left">
                             <p class="font-desc blog__desc">
                                 Stay up to date with the latest tech trands and
                                 news in the pets.
@@ -1096,7 +1117,7 @@
                     </div>
                     <div class="blog__list">
                         <!-- Blog item 1 -->
-                        <article class="blog-item">
+                        <article class="blog-item" data-aos="flip-left">
                             <figure class="blog-item__img-wrap">
                                 <time
                                     datetime="21 june 2021"
@@ -1127,7 +1148,7 @@
                         </article>
 
                         <!-- Blog item 2 -->
-                        <article class="blog-item">
+                        <article class="blog-item" data-aos="flip-up">
                             <figure class="blog-item__img-wrap">
                                 <time
                                     datetime="28 june 2021"
@@ -1158,7 +1179,7 @@
                         </article>
 
                         <!-- Blog item 3 -->
-                        <article class="blog-item">
+                        <article class="blog-item" data-aos="flip-right">
                             <figure class="blog-item__img-wrap">
                                 <time
                                     datetime="10 july 2021"
@@ -1387,5 +1408,11 @@
                 <p class="footer__coppy-right">Copyright & Design By Uihut</p>
             </div>
         </footer>
+
+        <!-- js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({ offset: 260, duration: 800, delay: 100 });
+        </script>
     </body>
 </html>
